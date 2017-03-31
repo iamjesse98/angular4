@@ -1,0 +1,10 @@
+<h2>Hey you!</h2>
+
+<div *ngIf = "isPerson; then tpl1 else tpl2"></div>
+
+<ng-template #tpl1>Yes ;)</ng-template>
+<ng-template #tpl2>No :(</ng-template>
+
+<br>
+
+<div *ngIf = "!isPerson; then tpl1 else tpl2"></div>
